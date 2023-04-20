@@ -20,6 +20,7 @@ This list may be updated, but it is extremely unlikely.
  - [Tileset](https://sqdldev.github.io/rolling-sky/tileset/)
  - [Tile Display Embed](https://sqdldev.github.io/rolling-sky/tileset/display?tile=1)
  - [Tile Lookup](https://sqdldev.github.io/rolling-sky/tile-lookup/)
+ - [Spritemaker](https://sqdldev.github.io/rolling-sky/spritesheet-creator/)
  - [Rolling Sky Level Tiled Exporter Plugin](https://sqdldev.github.io/RollingSkyLevelExporter_public.js)
 
 ## Your Level in WebEditor
