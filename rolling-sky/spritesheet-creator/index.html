@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Rolling Sky Spritesheet Creator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="pagename" content="Rolling Sky Spritesheet Creator">
+<meta name="description" content="Online tool to help you create your own Rolling Sky Spritesheets.">
+<link rel="stylesheet" href="index.css">
+<script src="../../favicon.js"></script><link rel="icon" href="../../assets/favicon/Ball9.png">
+<link rel="stylesheet" href="../global.css">
+<script src="../global.js"></script><div><script src="https://www.googletagmanager.com/gtag/js?id=G-E48XX6KB6H" async=""></script></div>
+<script src="../../assets/jscolor.js"></script>
+</head>
+<body>
+<div id="loader">
+<span class="loaderText">Loading Assets...</span>
+<div id="loaderBar"><div id="loaderBarFill"></div></div>
+</div>
+<div id="page">
+<div id="mainmenu">
+<div class="title">Rolling Sky SpriteMaker</div>
+<p>Please credit me or this site if you decide to use the export in any sort of content.
+<ul>
+<li>Enemy: The texture used for most obstacles</li>
+<li>General (Mover): The texture used for the ground and pillars</li>
+<li>Fragile/FragileActive: The texture used for fragiles and falling fragiles, Fragile also contains the gradient used for midground models</li>
+</ul>
+Note that this is an experemental release of SpriteMaker, and will definitely appear. Please report the bugs to me on Discord so I can fix them. Thank you.
+</p>
+<p style="display: none;">
+Spritesheets Made Globally (Live): <span id="spriteAmountMade">...</span>
+</p>
+<h2>Create from Template</h2>
+<p>Create a spritesheet from an existing template. Movers are in the General option.</p>
+<select id="spriteType">
+<option value="0">Enemy</option>
+<option value="1">General</option>
+<option value="2">Fragile</option>
+</select>
+<button onclick="createNewSpritesheet(this.previousElementSibling.value)">Create</button>
+<h2>Upload Project</h2>
+<p>Load a project you can download by pressing "Download Project" on the spritesheet creator page.</p>
+<input type="file" id="fileuploadinput" accept=".rs">
+<h2>Load Previous Project</h2>
+<p>Load the previous project you have edited. Your previous project data is saved whenever you modify a spritesheet, which means if you create a new spritesheet accidentally, you can still load the previous project you have edited.</p>
+<button onclick="MainMenu.LoadPrevious()">Load</button>
+</div>
+<div id="container" style="display: none;">
+<div class="title">Rolling Sky SpriteMaker</div>
+<p>
+<form id="nameform" onchange="updateNameType()">
+<label for="spritename">Spritesheet Name: <input id="spritename" placeholder="Enter sprite name" type="text"/></label>
+</form>
+</p>
+<div id="canvasContainer">
+<canvas id="main" width="512" height="512"></canvas>
+<canvas id="alt" style="display: none;" width="512" height="512"></canvas>
+</div>
+<p style="line-height: 2;">
+<button onclick="sprDownload(0)">Download Render</button>
+<button onclick="sprDownload(1)">Download Project</button>
+<button onclick="MainMenu.Enter()">Back to Main Menu</button>
+<p>
+<button onclick="SpriteMaker.Data.Draw(sprite, canvas)">Reload (If areas are missing)</button>
+</p>
+</p>
+</div>
+</div>
+<div id="hidden"></div>
+<script src="index.js"></script>
+</body>
+</html>
