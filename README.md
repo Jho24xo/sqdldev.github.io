@@ -21,7 +21,7 @@ This list may be updated, but it is extremely unlikely.
  - [Tile Display Embed](https://sqdldev.github.io/rolling-sky/tileset/display?tile=1)
  - [Tile Lookup](https://sqdldev.github.io/rolling-sky/tile-lookup/)
  - [Spritemaker](https://sqdldev.github.io/rolling-sky/spritesheet-creator/)
- - [Rolling Sky Level Tiled Exporter Plugin](https://sqdldev.github.io/RollingSkyLevelExporter_public.js)
+ - [Rolling Sky Level Tiled Exporter Plugin](https://www.mediafire.com/file/mqpnsmbtbv921xy/)
 
 ## Your Level in WebEditor
 Your level is now accessible in the WebEditor page. Please visit [this link](https://sqdldev.github.io/rolling-sky/level-editor/level-recovery/) to recover any level that may have been saved in your LocalStorage. You were warned to regularly back up your level to your device, so consider this as simply a kind gesture from me.
